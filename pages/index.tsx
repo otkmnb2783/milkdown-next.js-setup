@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import styles from '../styles/Home.module.css'
 
 const MilkdownEditor = dynamic(
-  () => import('../components/milkdown/MilkdownEditor').then((module) => module.MilkdownEditor),
+  () => import('../components/milkdown/MilkdownEditor'),
   {
     loading: () => <div>loading</div>,
     ssr: false,

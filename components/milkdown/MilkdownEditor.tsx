@@ -6,7 +6,7 @@ import { ReactEditor, useEditor } from '@milkdown/react'
 import { commonmark } from '@milkdown/preset-commonmark'
 import { emoji } from '@milkdown/plugin-emoji'
 
-export const MilkdownEditor = ({
+const MilkdownEditor = ({
   content,
 }: { content: string }) => {
   const editor = useEditor(
@@ -25,3 +25,5 @@ export const MilkdownEditor = ({
     <ReactEditor editor={editor} />
   )
 }
+
+export default MilkdownEditor
