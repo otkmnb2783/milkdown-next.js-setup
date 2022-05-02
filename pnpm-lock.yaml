@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@milkdown/core': ^6.0.2
   '@milkdown/plugin-emoji': ^6.0.2
+  '@milkdown/plugin-indent': ^6.0.2
   '@milkdown/preset-commonmark': ^6.0.2
   '@milkdown/prose': ^6.0.2
   '@milkdown/react': ^6.0.2
@@ -20,6 +21,7 @@ specifiers:
 dependencies:
   '@milkdown/core': 6.0.2_@milkdown+prose@6.0.2
   '@milkdown/plugin-emoji': 6.0.2_391eefabb058b340018f9d73e2354c77
+  '@milkdown/plugin-indent': 6.0.2_391eefabb058b340018f9d73e2354c77
   '@milkdown/preset-commonmark': 6.0.2_391eefabb058b340018f9d73e2354c77
   '@milkdown/prose': 6.0.2
   '@milkdown/react': 6.0.2_ca4f35e05c420fb6a1139e43c8c29e6f
@@ -274,6 +276,18 @@ packages:
       tslib: 2.4.0
       twemoji: 14.0.2
       unist-util-visit: 4.1.0
+    dev: false
+
+  /@milkdown/plugin-indent/6.0.2_391eefabb058b340018f9d73e2354c77:
+    resolution: {integrity: sha512-ynhthwT9Q36tSEoEcfGIJRtXgfbgE++cXzITde+69DHDIMz83BHKmcMJkdKaw/O5g1Rfs9OJx6BQY4OX7RQqbg==}
+    peerDependencies:
+      '@milkdown/core': ^6.0.1
+      '@milkdown/prose': ^6.0.1
+    dependencies:
+      '@milkdown/core': 6.0.2_@milkdown+prose@6.0.2
+      '@milkdown/prose': 6.0.2
+      '@milkdown/utils': 6.0.2_391eefabb058b340018f9d73e2354c77
+      tslib: 2.4.0
     dev: false
 
   /@milkdown/preset-commonmark/6.0.2_391eefabb058b340018f9d73e2354c77:

@@ -5,6 +5,7 @@ import { nord } from '@milkdown/theme-nord'
 import { ReactEditor, useEditor } from '@milkdown/react'
 import { commonmark } from '@milkdown/preset-commonmark'
 import { emoji } from '@milkdown/plugin-emoji'
+import { indent, indentPlugin } from '@milkdown/plugin-indent'
 
 const MilkdownEditor = ({
   content,
@@ -19,6 +20,12 @@ const MilkdownEditor = ({
         .use(nord)
         .use(emoji)
         .use(commonmark)
+        .use(
+          indent.configure(indentPlugin, {
+            type: 'space',
+            size: 2,
+          }),
+        )
     },
   )
   return (
