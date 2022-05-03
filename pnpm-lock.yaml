@@ -4,6 +4,7 @@ specifiers:
   '@milkdown/core': ^6.0.2
   '@milkdown/plugin-emoji': ^6.0.2
   '@milkdown/plugin-indent': ^6.0.2
+  '@milkdown/plugin-menu': ^6.0.2
   '@milkdown/preset-commonmark': ^6.0.2
   '@milkdown/prose': ^6.0.2
   '@milkdown/react': ^6.0.2
@@ -13,6 +14,7 @@ specifiers:
   '@types/react-dom': 18.0.3
   eslint: 8.14.0
   eslint-config-next: 12.1.5
+  material-icons: ^1.10.9
   next: 12.1.5
   react: 18.1.0
   react-dom: 18.1.0
@@ -22,10 +24,12 @@ dependencies:
   '@milkdown/core': 6.0.2_@milkdown+prose@6.0.2
   '@milkdown/plugin-emoji': 6.0.2_391eefabb058b340018f9d73e2354c77
   '@milkdown/plugin-indent': 6.0.2_391eefabb058b340018f9d73e2354c77
+  '@milkdown/plugin-menu': 6.0.2_391eefabb058b340018f9d73e2354c77
   '@milkdown/preset-commonmark': 6.0.2_391eefabb058b340018f9d73e2354c77
   '@milkdown/prose': 6.0.2
   '@milkdown/react': 6.0.2_ca4f35e05c420fb6a1139e43c8c29e6f
   '@milkdown/theme-nord': 6.0.2_391eefabb058b340018f9d73e2354c77
+  material-icons: 1.10.9
   next: 12.1.5_react-dom@18.1.0+react@18.1.0
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
@@ -280,6 +284,18 @@ packages:
 
   /@milkdown/plugin-indent/6.0.2_391eefabb058b340018f9d73e2354c77:
     resolution: {integrity: sha512-ynhthwT9Q36tSEoEcfGIJRtXgfbgE++cXzITde+69DHDIMz83BHKmcMJkdKaw/O5g1Rfs9OJx6BQY4OX7RQqbg==}
+    peerDependencies:
+      '@milkdown/core': ^6.0.1
+      '@milkdown/prose': ^6.0.1
+    dependencies:
+      '@milkdown/core': 6.0.2_@milkdown+prose@6.0.2
+      '@milkdown/prose': 6.0.2
+      '@milkdown/utils': 6.0.2_391eefabb058b340018f9d73e2354c77
+      tslib: 2.4.0
+    dev: false
+
+  /@milkdown/plugin-menu/6.0.2_391eefabb058b340018f9d73e2354c77:
+    resolution: {integrity: sha512-acXEjTWH8jWD9JuAW0U92C0YqQWOm78FqhdvjnYsFboMHy5NlQ800SGRB6vk2SZ3GjpDb7ZsAgu1wvD+xVldEg==}
     peerDependencies:
       '@milkdown/core': ^6.0.1
       '@milkdown/prose': ^6.0.1
@@ -1829,6 +1845,10 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /material-icons/1.10.9:
+    resolution: {integrity: sha512-bix9hlteHhaO/I2mfLjs5XeJG31E72p+gTj8BXt/1bwRnry8FCot5CVeHBhnkgGEBdiI+DphRYxB3uTDxZ9stg==}
+    dev: false
 
   /mdast-util-definitions/5.1.0:
     resolution: {integrity: sha512-5hcR7FL2EuZ4q6lLMUK5w4lHT2H3vqL9quPvYZ/Ku5iifrirfMHiGdhxdXMUbUkDmz5I+TYMd7nbaxUhbQkfpQ==}
