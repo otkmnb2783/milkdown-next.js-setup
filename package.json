@@ -17,7 +17,7 @@
     "@milkdown/plugin-indent": "^6.0.2",
     "@milkdown/plugin-menu": "^6.0.2",
     "@milkdown/plugin-slash": "^6.0.2",
-    "@milkdown/preset-commonmark": "^6.0.2",
+    "@milkdown/preset-gfm": "^6.0.2",
     "@milkdown/prose": "^6.0.2",
     "@milkdown/react": "^6.0.2",
     "@milkdown/theme-nord": "^6.0.2",

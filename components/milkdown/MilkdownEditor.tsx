@@ -3,7 +3,7 @@ import React, { useState, useEffect, RefObject } from 'react'
 import { defaultValueCtx, Editor, rootCtx } from '@milkdown/core'
 import { nord } from '@milkdown/theme-nord'
 import { ReactEditor, useEditor } from '@milkdown/react'
-import { commonmark } from '@milkdown/preset-commonmark'
+import { gfm } from '@milkdown/preset-gfm'
 import { emoji } from '@milkdown/plugin-emoji'
 import { indent, indentPlugin } from '@milkdown/plugin-indent'
 import { menu } from '@milkdown/plugin-menu'
@@ -24,7 +24,7 @@ const MilkdownEditor = ({
         })
         .use(nord)
         .use(emoji)
-        .use(commonmark)
+        .use(gfm)
         .use(menu)
         .use(clipboard)
         .use(slash)
