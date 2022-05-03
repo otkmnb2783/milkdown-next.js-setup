@@ -12,6 +12,7 @@
     "@milkdown/core": "^6.0.2",
     "@milkdown/plugin-clipboard": "^6.0.2",
     "@milkdown/plugin-emoji": "^6.0.2",
+    "@milkdown/plugin-history": "^6.0.2",
     "@milkdown/plugin-indent": "^6.0.2",
     "@milkdown/plugin-menu": "^6.0.2",
     "@milkdown/plugin-slash": "^6.0.2",

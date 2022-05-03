@@ -9,6 +9,7 @@ import { indent, indentPlugin } from '@milkdown/plugin-indent'
 import { menu } from '@milkdown/plugin-menu'
 import { clipboard } from '@milkdown/plugin-clipboard'
 import { slash } from '@milkdown/plugin-slash'
+import { history } from '@milkdown/plugin-history'
 
 const MilkdownEditor = ({
   content,
@@ -26,6 +27,7 @@ const MilkdownEditor = ({
         .use(menu)
         .use(clipboard)
         .use(slash)
+        .use(history)
         .use(
           indent.configure(indentPlugin, {
             type: 'space',
