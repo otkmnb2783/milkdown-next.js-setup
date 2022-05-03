@@ -10,6 +10,7 @@ import { menu } from '@milkdown/plugin-menu'
 import { clipboard } from '@milkdown/plugin-clipboard'
 import { slash } from '@milkdown/plugin-slash'
 import { history } from '@milkdown/plugin-history'
+import { cursor } from '@milkdown/plugin-cursor'
 
 const MilkdownEditor = ({
   content,
@@ -28,6 +29,7 @@ const MilkdownEditor = ({
         .use(clipboard)
         .use(slash)
         .use(history)
+        .use(cursor)
         .use(
           indent.configure(indentPlugin, {
             type: 'space',
