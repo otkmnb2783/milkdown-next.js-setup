@@ -7,6 +7,7 @@ import { commonmark } from '@milkdown/preset-commonmark'
 import { emoji } from '@milkdown/plugin-emoji'
 import { indent, indentPlugin } from '@milkdown/plugin-indent'
 import { menu } from '@milkdown/plugin-menu'
+import { clipboard } from '@milkdown/plugin-clipboard'
 
 const MilkdownEditor = ({
   content,
@@ -22,6 +23,7 @@ const MilkdownEditor = ({
         .use(emoji)
         .use(commonmark)
         .use(menu)
+        .use(clipboard)
         .use(
           indent.configure(indentPlugin, {
             type: 'space',

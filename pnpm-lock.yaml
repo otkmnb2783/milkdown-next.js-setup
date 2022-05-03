@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@milkdown/core': ^6.0.2
+  '@milkdown/plugin-clipboard': ^6.0.2
   '@milkdown/plugin-emoji': ^6.0.2
   '@milkdown/plugin-indent': ^6.0.2
   '@milkdown/plugin-menu': ^6.0.2
@@ -22,6 +23,7 @@ specifiers:
 
 dependencies:
   '@milkdown/core': 6.0.2_@milkdown+prose@6.0.2
+  '@milkdown/plugin-clipboard': 6.0.2_391eefabb058b340018f9d73e2354c77
   '@milkdown/plugin-emoji': 6.0.2_391eefabb058b340018f9d73e2354c77
   '@milkdown/plugin-indent': 6.0.2_391eefabb058b340018f9d73e2354c77
   '@milkdown/plugin-menu': 6.0.2_391eefabb058b340018f9d73e2354c77
@@ -261,6 +263,18 @@ packages:
   /@milkdown/exception/6.0.2:
     resolution: {integrity: sha512-SJFJbxOGV+A49f7H+k4L6ZEjbR6+AfWzdQ6ZJ/9guAE894E/bu5NGhC4sYXR0MN1+Awj7n8PMfJ2VkOL+Yeh0Q==}
     dependencies:
+      tslib: 2.4.0
+    dev: false
+
+  /@milkdown/plugin-clipboard/6.0.2_391eefabb058b340018f9d73e2354c77:
+    resolution: {integrity: sha512-X0s/e8dZP7/V5orQINp1IlRBnk6W2CuYxRmS6HMlO5bfXTuD5VZFcP0AoJNFmndCGqHM2zGEDdU/NxLsejNNJQ==}
+    peerDependencies:
+      '@milkdown/core': ^6.0.1
+      '@milkdown/prose': ^6.0.1
+    dependencies:
+      '@milkdown/core': 6.0.2_@milkdown+prose@6.0.2
+      '@milkdown/prose': 6.0.2
+      '@milkdown/utils': 6.0.2_391eefabb058b340018f9d73e2354c77
       tslib: 2.4.0
     dev: false
 
