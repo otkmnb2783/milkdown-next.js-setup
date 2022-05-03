@@ -8,6 +8,7 @@ import { emoji } from '@milkdown/plugin-emoji'
 import { indent, indentPlugin } from '@milkdown/plugin-indent'
 import { menu } from '@milkdown/plugin-menu'
 import { clipboard } from '@milkdown/plugin-clipboard'
+import { slash } from '@milkdown/plugin-slash'
 
 const MilkdownEditor = ({
   content,
@@ -24,6 +25,7 @@ const MilkdownEditor = ({
         .use(commonmark)
         .use(menu)
         .use(clipboard)
+        .use(slash)
         .use(
           indent.configure(indentPlugin, {
             type: 'space',
